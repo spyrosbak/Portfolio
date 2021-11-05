@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap');
+
+*,
+*::before,
+*::after{
+	box-sizing: border-box;
+}
+
+/* Custom Properties */
+
+:root{
+	--ff-primary: 'Zilla Slab', sans-serif;
+	--ff-secondary: Arial, Helvetica, monospace;
+
+	--fw-reg: 300;
+	--fw-bold: 900;
+
+	--clr-light: #fff;
+	--clr-dark: #303030;
+	--clr-accent: #00fff7;
+	--clr-bg: #e5e5e5;
+
+	--fs-h1: 3rem;
+	--fs-h2: 2.25rem;
+	--fs-h3: 1.25rem;
+	--fs-body: 1rem;
+
+	--box-shadow: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
+				0.125em 0.125em 0.25em rgba(0,0,0,.15);
+}
+
+@media (min-width: 800px){
+	:root{
+		--fs-h1: 4.5rem;
+		--fs-h2: 3.75rem;
+		--fs-h3: 1.5rem;
+		--fs-body: 1.125rem;
+	}
+}
+
+/* General Styles */
+
+body{
+	background: var(--clr-light);
+	color: var(--clr-dark);
+	margin: 0;
+	font-family: var(--ff-primary);
+	font-size: var(--fs-body);
+	line-height: 1;
+	background-color: var(--clr-bg);
+}
+
+section{
+	padding: 5em 2em;
+}
+
+img{
+	display: block;
+	max-width: 100%;
+}
+
+strong{
+	font-weight: var(--fw-bold);
+}
+
+:focus{
+	outline: 3px solid var(--clr-accent);
+	outline-offset: 3px;
+}
+
+/* Typography */
+
+h1,
+h2,
+h3{
+	line-height: 1.1;
+	margin: 0;
+}
+
+h1{
+	font-size: var(--fs-h1);
+}
+h2{
+	font-size: var(--fs-h2);
+}
+h3{
+	font-size: var(--fs-h3);
+}
+
+.section-title{
+	margin-bottom: .25em;
+}
+
+.section-title-intro{
+	font-weight: var(--fw-reg);
+}
+
+.section-title-intro strong{
+	display: block;
+}
+
+.section-subtitle{
+	margin: 0;
+	font-size: var(--fs-h3);
+}
+
+.section-subtitle-intro,
+.section-subtitle-about{
+	background: var(--clr-accent);
+	font-family: var(--ff-secondary);
+	margin-bottom: 1em;
+	padding: .25em 1em;
+}
+
+/* Header */
+.nav{
+	overflow: hidden;
+	background-color: var(--clr-dark);
+	}
+
+.nav a{
+	float: left;
+	color: var(--clr-accent);
+	text-align: left;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: var(--fs-h3);
+}
+
+.nav a:hover{
+	background-color: var(--clr-accent);
+	color: var(--clr-dark);
+}
+
+/* My skills section */
+
+.my-skills{
+	background-color: var(--clr-dark);
+	color: var(--clr-light);
+	background-size: cover;
+	text-align: center;
+}
+
+.section-title-skills{
+	color: var(--clr-accent);
+	position: relative;
+}
+
+.section-title-skills::after{
+	content: '';
+	display: block;
+	width: 2em;
+	height: 1px;
+	margin: 0.5em auto 1em;
+	background: currentColor;
+	opacity: 0.25;
+}
+
+.skills{
+	margin-bottom: 4em;
+}
+
+.skill{
+	max-width: 700px;
+	margin: 0 auto;
+	display: table;
+	transition: all 0.3s ease;
+	background: #222;
+	border-radius: 6px;
+	padding: 50px 25px;
+	text-align: center;
+}
+
+.skill:hover{
+	transform: scale(1.05);
+	background: var(--clr-accent);
+	color: var(--clr-dark);
+}
+
+@media (min-width: 1570px){
+	.skills{
+		display: flex;
+		max-width: 1920px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.skill{
+		margin-bottom: 20px;
+	}
+
+	.skill + .skill{
+		margin-left: 1em;
+	}
+}
+
+/* About Me section*/
+
+.about-me{
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.about-me-img{
+	box-shadow: var(--box-shadow);
+}
+
+@media (min-width: 1000px) {
+	.about-me{
+		display: grid;
+		grid-template-columns: 1fr 300px;
+		grid-template-areas: "title img" "subtitle img" "text img";
+		grid-column-gap: 2em;
+		text-align: justify;
+	}
+
+	.section-title-about{
+		grid-area: title;
+	}
+
+	.section-subtitle-about{
+		grid-area: subtitle;
+		grid-column: 1/-1;
+		grid-row: 2;
+		position: relative;
+		left: -1em;
+		width: calc(100% + 4em);
+		padding-left: 1em;
+		padding-right: calc(200px + 4em);
+	}
+
+	.about-me-img{
+		grid-area: img;
+		position: relative;
+		top: 90px;
+		z-index: 2;
+	}
+}
+
+/* Projects Section*/
+.my-projects{
+	background-color: var(--clr-dark);
+	text-align: center;
+	color: var(--clr-accent);
+}
+
+.my-projects .section-title::after{
+    content: '';
+}
+.my-projects .carousel .card{
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+		color: var(--clr-light);
+}
+.my-projects .carousel .card:hover{
+    background: var(--clr-accent);
+		color: var(--clr-dark);
+}
+.my-projects .carousel .card .box{
+    display: flex;
+		flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.my-projects .carousel .card:hover .box{
+    transform: scale(1.05);
+}
+.my-projects .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.my-projects .carousel .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid var(--clr-accent);;
+    transition: all 0.3s ease;
+}
+.my-projects .carousel .card:hover img{
+    border-color: var(--clr-dark);
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid var(--clr-accent);!important;
+    transition: all 0.3s ease;
+}
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+    background: var(--clr-accent);!important;
+}
+
+.spacing{
+	background-color: var(--clr-bg);
+}
+
+.icon{
+	width: 30px;
+	height: 30px;
+}
+
+/* Footer */
+.footer{
+	background-color: black;
+	color: var(--clr-accent);
+	text-align: center;
+	padding: .1em 0;
+	font-size: var(--fs-h3);
+}
+
+.footer a{
+	color: inherit;
+	text-decoration: none;
+}
+
+.mail-link{
+	font-weight: var(--fw-bold);
+}
+
+.social-link:hover{
+	opacity: .7;
+}
+
+.social{
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	margin: 2em 0;
+	padding: 0;
+}
+
+.social-item{
+	margin: 0 .5em;
+}
+
+.social-link{
+	padding: .5em;
+}
+
+.credits{
+	margin: 0;
+	padding: 0;
+}
+
+.references{
+	text-align: left;
+	font-size: 15px;
+}
+
+#up{
+	display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: var(--clr-accent);
+  color: var(--clr-dark);
+	font-weight: var(--fw-bold);
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#up:hover{
+	filter: brightness(90%);
+}
