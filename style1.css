@@ -299,6 +299,7 @@ h3{
     border: 2px solid var(--clr-accent);!important;
     transition: all 0.3s ease;
 }
+
 .owl-dot.active{
     width: 35px;
     border-radius: 14px;
