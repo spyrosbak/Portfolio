@@ -296,7 +296,7 @@ h3{
     margin: 0 5px;
     outline: none!important;
     border-radius: 50%;
-    border: 2px solid var(--clr-accent);!important;
+    border: 2px solid var(--clr-accent); !important;
     transition: all 0.3s ease;
 }
 
@@ -306,7 +306,7 @@ h3{
 }
 .owl-dot.active,
 .owl-dot:hover{
-    background: var(--clr-accent);!important;
+    background: var(--clr-accent); !important;
 }
 
 .spacing{
@@ -375,7 +375,7 @@ h3{
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: var(--clr-accent);
+  background-color: var(--clr-light);
   color: var(--clr-dark);
 	font-weight: var(--fw-bold);
   cursor: pointer;
