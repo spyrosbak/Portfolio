@@ -24,31 +24,36 @@
         </center>
     </section>
 
-    <!--section class="slideshow" id="project-slideshow">
+    <section class="slideshow" id="project-slideshow">
         <div class="slideshow-container">
             <div class="mySlides fade">
-                <div class="numbertext">1/5</div>
-                <img src="" style="width: 100%">
+                <div class="numbertext">1/6</div>
+                <img src="brickbreaker assets/brickbreaker1.png" style="width: 100%">
             </div>
 
             <div class="mySlides fade">
-                <div class="numbertext">2/5</div>
-                <img src="" style="width: 100%">
+                <div class="numbertext">2/6</div>
+                <img src="brickbreaker assets/brickbreaker2.png" style="width: 100%">
             </div>
 
             <div class="mySlides fade">
-                <div class="numbertext">3/5</div>
-                <img src="" style="width: 100%">
+                <div class="numbertext">3/6</div>
+                <img src="brickbreaker assets/brickbreaker3.png" style="width: 100%">
             </div>
 
             <div class="mySlides fade">
-                <div class="numbertext">4/5</div>
-                <img src="" style="width: 100%">
+                <div class="numbertext">4/6</div>
+                <img src="brickbreaker assets/brickbreaker4.png" style="width: 100%">
             </div>
 
             <div class="mySlides fade">
-                <div class="numbertext">5/5</div>
-                <img src="" style="width: 100%">
+                <div class="numbertext">5/6</div>
+                <img src="brickbreaker assets/brickbreaker5.png" style="width: 100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">6/6</div>
+                <img src="brickbreaker assets/brickbreaker6.png" style="width: 100%">
             </div>
 
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -62,24 +67,47 @@
             <span class="dot" onclick="currentSlide(3)"></span>
             <span class="dot" onclick="currentSlide(4)"></span>
             <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
         </div>
-    </section-->
+    </section>
 
     <section class="summary" id="project-summary">
         <div class="summary-body">
             <p>
-                
-            <p>
+                This game is a clone of the classic breakout game. Iy has a basic logic
+                and the gameplay is very simple. The player controlls a paddle that can
+                move left and right on top of which a ball bounces. The aim of the game
+                is to direct the ball inside a playfield of coloured bricks in order to
+                break them by hitting them with the ball. The level is cleared once every
+                brick has been broken. Otherwise, if the ball passes beyond the paddle 
+                the game is over and the level starts from the beginning.
+            </p>
 
             <p>
-                
+                In addition, this project includes some extra features. It implements data
+                persistence between the scenes and also between sessions. Data persistence
+                between scenes is the process of transferring data from scene to scene to
+                give the user a consistent experience as they progress through the game.
+                It is used to transfer inforamtion spesific to the player (eg. their username)
+                throughout the game. Data persistince between sessions is where the player
+                wants to save the progress they made during one session and then restore it
+                in another session. This is particularly helpfull when we want to keep track
+                of highscores of each player and construct a leaderboard.
+            </p>
+            
+            <p>
+                In order to achieve those kinds of data persistence, the singleton design pattern
+                is used. Singleton is a design pattern that defines and instantiates only one instance
+                of the class in the entire execution of a game or application. Then, this instance with
+                all its attributes can be transfered and manipualted in various stages of the application.
             </p>
         </div>
     </section>
 
     <section class="acknowledgments" id="project-acknowledgments">
         <div class="acknowledgments-body">
-            <p>Brick Breaker was made with <span style="color: #00fff7" ;>Unity.</span></p>
+            <center><p>Brick Breaker was made with <span style="color: #00fff7";>Unity.</span></p></center>
+            <p>The project was part of a Unity course and the starter assets can be found on the Unity Learn page under the particular section.</p>
         </div>
     </section>
 
