@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Brick Breaker</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <link href='https://fonts.googleapis.com/css?family=Zilla Slab' rel='stylesheet'>
+    <link rel="stylesheet" href="/css/master.css">
+</head>
+
+<body>
+    <!--Header-->
+    <div class="nav">
+        <a href="index.html">Home</a>
+    </div>
+    <!--End header-->
+
+    <section class="project-title" id="project">
+        <center>
+            <h1 class="section-project section-title-project">Single Object Tracking</h1>
+            <h3 class="project-subtitle"><i>~ with Haar algorithm ~</i></h3>
+        </center>
+    </section>
+
+    <section class="slideshow" id="project-slideshow">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1/6</div>
+                <img src="single object tracking assets/singleObjectTracking1.png" style="width: 100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <div style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+        </div>
+    </section>
+
+    <section class="summary" id="project-summary">
+        <div class="summary-body">
+            <p>
+                In this project Haar cascade is used to detect and track faces and eyes in a video.
+                Haar is a machine learning algorithm used for object detection. The algorithm model
+                is trained with a lot of positive images of faces and a lot of negative images that
+                don't include any face in them. Haar algorithm identifies and labels the eyes and
+                face separetly. In this simple example we track the facial expressions of a woman in
+                a video.
+            </p>
+        </div>
+    </section>
+
+    <section class="acknowledgments" id="project-acknowledgments">
+        <div class="acknowledgments-body">
+            <p>The project was made using</p>
+            <div class="tools-list">
+                <li class="tool-item" style="color: #0b0b16; font-size: larger;"><span style="color: #00fff7; font-size:large;">Python 3.8</span></li>
+                <li class="tool-item" style="color: #0b0b16; font-size: larger"><span style="color: #00fff7; font-size:large">OpenCV</span></li>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <a href="#" id="contact" class="mail-link">Contact me</a>
+        <ul class="social">
+            <li class="social-item"><a class="social-link" href="mailto:sbakalakos@gmail.com"><img src="gmail.png"
+                        alt="" class="icon"></a></li>
+            <li class="social-item"><a class="social-link"
+                    href="https://www.linkedin.com/in/spyros-bakalakos-752375220/"><img src="linkedin.png" alt=""
+                        class="icon"></a></li>
+            <li class="social-item"><a class="social-link" href="https://github.com/spyrosbak"><img src="github.png"
+                        alt="" class="icon"></a></li>
+            <li class="social-item"><a class="social-link" href="https://www.artstation.com/spike-pneuma"><img
+                        src="artstation.png" alt="" class="icon"></a></li>
+            <li class="social-item"><a class="social-link" href="https://www.instagram.com/spyros.bak/"><img
+                        src="instagram.png" alt="" class="icon"></a></li>
+            <li class="social-item"><a class="social-link" href="https://www.facebook.com/spyros.bakalakos.3"><img
+                        src="facebook.png" alt="" class="icon"></a></li>
+            <li class="social-item"><a class="social-link" href="https://twitter.com/sP2iKe"><img src="twitter.png"
+                        alt="" class="icon"></a></li>
+        </ul>
+    </footer>
+
+    <button onclick="topFunction()" id="up" title="go to top"><img src="arrow.png" alt="" class="icon"></button>
+    <script src="script.js"></script>
+</body>
+
+</html>
