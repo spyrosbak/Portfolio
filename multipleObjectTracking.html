@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Single Object Tracking</title>
+    <title>Multiple Object Tracking</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style1.css">
@@ -19,8 +19,8 @@
 
     <section class="project-title" id="project">
         <center>
-            <h1 class="section-project section-title-project">Single Object Tracking</h1>
-            <h3 class="project-subtitle"><i>~ with Haar algorithm ~</i></h3>
+            <h1 class="section-project section-title-project">Multiple Object Tracking</h1>
+            <h3 class="project-subtitle"><i>~ CSRT, KCF and MOSSE techniques ~</i></h3>
         </center>
     </section>
 
@@ -28,7 +28,12 @@
         <div class="slideshow-container">
             <div class="mySlides fade">
                 <div class="numbertext">1/6</div>
-                <img src="single object tracking assets/singleObjectTracking1.png" style="width: 100%">
+                <img src="multiple object tracking assets/multipleObjectTracking1.png" style="width: 100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2/6</div>
+                <img src="multiple object tracking assets/multipleObjectTracking2.png" style="width: 100%">
             </div>
 
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -38,18 +43,29 @@
 
         <div style="text-align: center">
             <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
         </div>
     </section>
 
     <section class="summary" id="project-summary">
         <div class="summary-body">
             <p>
-                In this project Haar cascade is used to detect and track faces and eyes in a video.
-                Haar is a machine learning algorithm used for object detection. The algorithm model
-                is trained with a lot of positive images of faces and a lot of negative images that
-                don't include any face in them. Haar algorithm identifies and labels the eyes and
-                face separetly. In this simple example we track the facial expressions of a woman in
-                a video.
+                In this computer vision project we use three different algorithms to track
+                multiple objects in a video simultaneously. CSRT, KCF and MOSSE can all be
+                used in this exaple. 
+            </p>
+            <p>
+                The CSRT model enables channel and spatial reliability. It is very accurate
+                but not that fast. MOSSE on the other hand is a lot faster but lacks accuracy.
+                The MOSSE filter adapts to the changes in the appearance of the object while
+                tracking. Finally, KCF algorithm uses a linear ridge regression model to track
+                an object. It is as accurate as it is fast.
+            </p>
+            <p>
+                To run the algorithm on sample video, the user must firstly select one or more 
+                areas of interest by drawing a bounding box around it with the mouse. Then this
+                area is added to be tracked. Once the selection process is done the algorithm
+                tracks the objects inside that area.
             </p>
         </div>
     </section>
@@ -58,8 +74,10 @@
         <div class="acknowledgments-body">
             <p>The project was made using</p>
             <div class="tools-list">
-                <li class="tool-item" style="color: #0b0b16; font-size: larger;"><span style="color: #00fff7; font-size:large;">Python 3.8</span></li>
-                <li class="tool-item" style="color: #0b0b16; font-size: larger"><span style="color: #00fff7; font-size:large">OpenCV</span></li>
+                <li class="tool-item" style="color: #0b0b16; font-size: larger;"><span
+                        style="color: #00fff7; font-size:large;">Python 3.8</span></li>
+                <li class="tool-item" style="color: #0b0b16; font-size: larger"><span
+                        style="color: #00fff7; font-size:large">OpenCV</span></li>
             </div>
         </div>
     </section>

@@ -172,10 +172,24 @@ h3{
 	text-align: center;
 }
 
+.skill-content{
+	list-style: none;
+	margin-top: 10%;
+	display: grid;
+	border-bottom: 3px solid var(--clr-light);
+	border-radius: 7px;
+}
+
+.skill-content:hover{
+	transform: scale(0.9);
+	border-color: #0b0b16;
+}
+
 .skill:hover{
 	transform: scale(1.05);
 	background: var(--clr-accent);
 	color: var(--clr-dark);
+	border: var(--clr-bg);
 }
 
 @media (min-width: 1570px){
