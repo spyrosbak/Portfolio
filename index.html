@@ -38,135 +38,87 @@
      <div class="skills">
 
         <div class="skill">
-          <h3>Programming Languages</h3>
-          <li class="skill-content"><p><b>C#</b></p></li>
-          <li class="skill-content"><p><b>C++</b></p></li>
-          <li class="skill-content"><p><b>Java</b></p></li>
-          <li class="skill-content"><p><b>Python</b></p></li>
+          <button onclick="showLanguages()" class="dropbtn"><h3>Programming Languages</h3></button>
+          <div id="myDropdown1" class="dropdown-content">
+            <a><b>C#</b></a>
+            <a><b>C++</b></a>
+            <a><b>Java</b></a>
+            <a><b>Python</b></a>
+          </div>
         </div>
 
         <div class="skill">
-          <h3>Game Development</h3>
-          <li class="skill-content">
-            <p><b>Unity</b></p>
-          </li>
-          <li class="skill-content">
-            <p><b>Game Design</b></p>
-          </li>
-          <li class="skill-content">
-            <p><b>Game Programming</b></p>
-          </li>
-          <li class="skill-content">
-            <p><b>3D Games</b></p>
-          </li>
-          <li class="skill-content">
-            <p><b>2D Ganes</b></p>
-          </li>
-          <li class="skill-content">
-            <p><b>Multiplayer Games</b></p>
-          </li>
-          <li class="skill-content">
-            <p><b>Animation Controlling</b></p>
-          </li>
-          <li class="skill-content">
-            <p><b>VFX</b></p>
-          </li>
-          <li class="skill-content">
-            <p><b>SFX</b></p>
-          </li>
+          <button onclick="showGamingSkills()" class="dropbtn"><h3>Game Development</h3></button>
+          <div id="myDropdown2" class="dropdown-content">
+            <a><b>Unity</b></a>
+            <a><b>Game Design</b></a>
+            <a><b>Game Programming</b></a>
+            <a><b>3D Games</b></a>
+            <a><b>2D Ganes</b></a>
+            <a><b>Multiplayer Games</b></a>
+            <a><b>Animation Controlling</b></a>
+            <a><b>VFX</b></a>
+            <a><b>SFX</b></a>
+          </div>
         </div>
 
         <div class="skill">
-          <h3>AR Development</h3>
-          <li class="skill-content">
-            <p><b>ARCore</b></p>
-          </li>
-          <li class="skill-content">
-            <p><b>ARFoundation</b></p>
-          </li>
-          <li class="skill-content">
-            <p><b>Augmented Images</b></p>
-          </li>
-          <li class="skill-content">
-            <p><b>Motion Tracking</b></p>
-          </li>
-          <li class="skill-content">
-            <p><b>Environmental Anchors</b></p>
-          </li>
+          <button onclick="showAR()" class="dropbtn"><h3>AR Development</h3></button>
+          <div id="myDropdown3" class="dropdown-content">
+            <a><b>ARCore</b></a>
+            <a><b>ARFoundation</b></a>
+            <a><b>Augmented Images</b></a>
+            <a><b>Motion Tracking</b></a>
+            <a><b>Environmental Anchors</b></a>
+          </div>
         </div>
 
         <div class="skill">
-          <h3>Web Design & Development</h3>
-          <li class="skill-content">
-            <p><b>HTML</b></p>
-          </li>
-          <li class="skill-content">
-            <p><b>CSS</b></p>
-          </li>
-          <li class="skill-content">
-            <p><b>JavaScript</b></p>
-          </li>
-          <li class="skill-content">
-            <p><b>React</b></p>
-          </li>
+          <button onclick="showWeb()" class="dropbtn"><h3>Web Design & Development</h3></button>
+          <div id="myDropdown4" class="dropdown-content">
+            <a><b>HTML</b></a>
+            <a><b>CSS</b></a>
+            <a><b>JavaScript</b></a>
+            <a><b>React</b></a>
+          </div>
         </div>
 
         <div class="skill">
-          <h3>AI & Machine Learning</h3>
-          <li class="skill-content">
-            <p><b>CNN</b></p>
-          </li>
-          <li class="skill-content">
-            <p><b>RNN</b></p>
-          </li>
-          <li class="skill-content">
-            <p><b>Image Recognition</b></p>
-          </li>
-          <li class="skill-content">
-            <p><b>Text Classification</b></p>
-          </li>
+          <button onclick="showAI()" class="dropbtn"><h3>AI & Machine Learning</h3></button>
+          <div id="myDropdown5" class="dropdown-content">
+            <a><b>CNN</b></a>
+            <a><b>RNN</b></a>
+            <a><b>Image Recognition</b></a>
+            <a><b>Text Classification</b></a>
+          </div>
         </div>
 
         <div class="skill">
-          <h3>Photo & Video Editing</h3>
-          <li class="skill-content">
-            <p><b>Photoshop</b></p>
-          </li>
-          <li class="skill-content">
-            <p><b>Premiere</b></p>
-          </li>
-          <li class="skill-content">
-            <p><b>Illustrator</b></p>
-          </li>
+          <button onclick="showAdobe()" class="dropbtn"><h3>Photo & Video Editing</h3></button>
+          <div id="myDropdown6" class="dropdown-content">
+            <a><b>Photoshop</b></a>
+            <a><b>Premiere</b></a>
+            <a><b>Illustrator</b></a>
+          </div>
         </div>
 
         <div class="skill">
-          <h3>Hardware</h3>
-          <li class="skill-content">
-            <p><b>PC Building</b></p>
-          </li>
-          <li class="skill-content">
-            <p><b>Repairing</b></p>
-          </li>
-          <li class="skill-content">
-            <p><b>Testbenching</b></p>
-          </li>
-          <li class="skill-content">
-            <p><b>Microelectronics</b></p>
-          </li>
+          <button onclick="showHardware()" class="dropbtn"><h3>Hardware</h3></button>
+          <div id="myDropdown7" class="dropdown-content">
+            <a><b>PC Building</b></a>
+            <a><b>Repairing</b></a>
+            <a><b>Testbenching</b></a>
+            <a><b>Microelectronics</b></a>
+          </div>
         </div>
 
         <div class="skill">
-          <h3>Network Administration</h3>
-          <li class="skill-content">
-            <p><b>IT Support</b></p>
-          </li>
-          <li class="skill-content">
-            <p><b>Configuration of Routers, Switches, Racks etc.</b></p>
-          </li>
-          <li class="skill-content">
-            <p><b>Internet Installation</b></p>
-          </li>
+          <button onclick="showNetwork()" class="dropbtn"><h3>Network Administration</h3></button>
+          <div id="myDropdown8" class="dropdown-content">
+            <a><b>IT Support</b></a>
+            <a><b>Configuration of Routers, Switches, Racks etc.</b></a>
+            <a><b>Internet Installation</b></a>
+          </div>
         </div>
 
      </div>
@@ -200,7 +152,7 @@
         <p>A Break out style prototype game</p>
       </div>
     </div>
-
+    <!--
     <div class="card">
       <div class="box">
         <img src="donut.png" alt="">
@@ -208,7 +160,7 @@
         <p>A 3D Model of a donut.</p>
       </div>
     </div>
-
+    !-->
     <div class="card">
       <div class="box">
         <a href="multipleObjectTracking.html">

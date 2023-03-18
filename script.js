@@ -18,6 +18,38 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
+function showLanguages(){
+  document.getElementById("myDropdown1").classList.toggle("show");
+}
+
+function showGamingSkills() {
+  document.getElementById("myDropdown2").classList.toggle("show");
+}
+
+function showAR() {
+  document.getElementById("myDropdown3").classList.toggle("show");
+}
+
+function showWeb() {
+  document.getElementById("myDropdown4").classList.toggle("show");
+}
+
+function showAI() {
+  document.getElementById("myDropdown5").classList.toggle("show");
+}
+
+function showAdobe() {
+  document.getElementById("myDropdown6").classList.toggle("show");
+}
+
+function showHardware() {
+  document.getElementById("myDropdown7").classList.toggle("show");
+}
+
+function showNetwork() {
+  document.getElementById("myDropdown8").classList.toggle("show");
+}
+
 //Slideshow
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -44,4 +76,18 @@ function showSlides(n) {
   }
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function (event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
 }
