@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Brick Breaker</title>
+    <title>Paw Run</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style1.css">
@@ -19,8 +19,8 @@
 
     <section class="project-title" id="project">
         <center>
-            <h1 class="section-project section-title-project">Brick Breaker</h1>
-            <h3 class="project-subtitle"><i>~ An old school video game ~</i></h3>
+            <h1 class="section-project section-title-project">Paw Run</h1>
+            <h3 class="project-subtitle"><i>~ Run Kitten, Run!  ~</i></h3>
         </center>
     </section>
 
@@ -28,32 +28,37 @@
         <div class="slideshow-container">
             <div class="mySlides fade">
                 <div class="numbertext">1/6</div>
-                <img src="brickbreaker assets/brickbreaker1.png" style="width: 100%">
+                <img src="paw run assets/Screenshot_1.png" style="width: 100%">
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext">2/6</div>
-                <img src="brickbreaker assets/brickbreaker2.png" style="width: 100%">
+                <img src="paw run assets/Screenshot_2.png" style="width: 100%">
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext">3/6</div>
-                <img src="brickbreaker assets/brickbreaker3.png" style="width: 100%">
+                <img src="paw run assets/Screenshot_3.png" style="width: 100%">
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext">4/6</div>
-                <img src="brickbreaker assets/brickbreaker4.png" style="width: 100%">
+                <img src="paw run assets/Screenshot_4.png" style="width: 100%">
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext">5/6</div>
-                <img src="brickbreaker assets/brickbreaker5.png" style="width: 100%">
+                <img src="paw run assets/Screenshot_5.png" style="width: 100%">
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext">6/6</div>
-                <img src="brickbreaker assets/brickbreaker6.png" style="width: 100%">
+                <img src="paw run assets/Screenshot_6.png" style="width: 100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">6/6</div>
+                <img src="paw run assets/Screenshot_7.png" style="width: 100%">
             </div>
 
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -74,40 +79,28 @@
     <section class="summary" id="project-summary">
         <div class="summary-body">
             <p>
-                This game is a clone of the classic breakout game. Iy has a basic logic
-                and the gameplay is very simple. The player controlls a paddle that can
-                move left and right on top of which a ball bounces. The aim of the game
-                is to direct the ball inside a playfield of coloured bricks in order to
-                break them by hitting them with the ball. The level is cleared once every
-                brick has been broken. Otherwise, if the ball passes beyond the paddle 
-                the game is over and the level starts from the beginning.
+                Paw Run is an endless runner video game in which the player controlls a cat running 
+                on the streets collecting fishbones along the way as it also trying to avoid the obstacles 
+                ahead. The fishbones collected can be used to recruit and use more kittens to run with.  
             </p>
 
             <p>
-                In addition, this project includes some extra features. It implements data
-                persistence between the scenes and also between sessions. Data persistence
-                between scenes is the process of transferring data from scene to scene to
-                give the user a consistent experience as they progress through the game.
-                It is used to transfer inforamtion spesific to the player (eg. their username)
-                throughout the game. Data persistince between sessions is where the player
-                wants to save the progress they made during one session and then restore it
-                in another session. This is particularly helpfull when we want to keep track
-                of highscores of each player and construct a leaderboard.
-            </p>
-            
-            <p>
-                In order to achieve those kinds of data persistence, the singleton design pattern
-                is used. Singleton is a design pattern that defines and instantiates only one instance
-                of the class in the entire execution of a game or application. Then, this instance with
-                all its attributes can be transfered and manipualted in various stages of the application.
+                The game includes a character selection system that allows the player to choose the kitten 
+                they want to run with and collect the fishbones. Every kitten has its own value of fishbowns 
+                that is needed to be unlocked in order for the player to be able to choose that specific 
+                character. There is also data persistence in the game through a Save/Load system in order 
+                to keep track of how many fishbones are available and which characters are unlocked.  
             </p>
         </div>
     </section>
 
     <section class="acknowledgments" id="project-acknowledgments">
         <div class="acknowledgments-body">
-            <center><p>Brick Breaker was made with <span style="color: #00fff7";>Unity.</span></p></center>
-            <p>The project was part of a Unity course and the starter assets can be found on the Unity Learn page under the particular section.</p>
+            <center>
+                <p>Paw Run was made with <span style="color: #00fff7";>Unity.</span></p>
+            </center>
+            <p style="font-size: smaller;">This game was made solely with free assets from various artist that can be
+                found onlne.</p>
         </div>
     </section>
 

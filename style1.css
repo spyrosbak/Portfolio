@@ -456,6 +456,7 @@ h3{
 .mySlides {
 	display: none;
 	border-color: #00fff7;
+	align-content: center;
 }
 
 /* Next & previous buttons */
