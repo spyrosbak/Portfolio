@@ -590,6 +590,8 @@ h3{
 
 .social-link{
 	padding: .5em;
+	text-decoration: none;
+	color: var(--clr-accent);
 }
 
 .credits{
