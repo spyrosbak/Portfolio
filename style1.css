@@ -3,6 +3,8 @@
 *,
 *::before,
 *::after{
+	margin: 0;
+	padding: 0;
 	box-sizing: border-box;
 }
 
@@ -311,14 +313,18 @@ h3{
 /* Projects Section*/
 .my-projects{
 	background-color: var(--clr-dark);
-	text-align: center;
 	color: var(--clr-accent);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	padding: 0 35px;
 }
 
 .my-projects .section-title::after{
 	content: '';
 	display: block;
-	width: 2em;
+	width: 20em;
 	height: 1px;
 	margin: 0.5em auto 1em;
 	background: currentColor;
@@ -555,8 +561,8 @@ h3{
 
 /* Footer */
 .footer{
-	background-color: var(--clr-bg);
-	color: var(--clr-accent);
+	background-color: var(--clr-light);
+	color: var(--clr-dark);
 	text-align: center;
 	padding: .1em 0;
 	font-size: var(--fs-h3);
@@ -611,7 +617,7 @@ h3{
   	right: 30px;
   	z-index: 99;
   	font-size: 18px;
-  	border: none;
+  	border: 2px solid var(--clr-accent);
   	outline: none;
   	background-color: var(--clr-light);
 	font-weight: var(--fw-bold);
@@ -622,4 +628,159 @@ h3{
 
 #up:hover{
 	filter: brightness(90%);
+}
+
+.card-wrapper{
+	max-width: 1200px;
+	width: 100%;
+	position: relative;
+	background: var(--clr-dark);
+}
+
+.card-wrapper i{
+	height: 50px;
+    width: 50px;
+    background: var(--clr-projects);
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    font-size: 1.25 rem;
+    transform: translateY(-50%);
+    box-shadow: 0 3px 6px var(--clr-accent);
+}
+
+.card-wrapper i:first-child {
+    left: -22px;
+}
+
+.card-wrapper i:last-child {
+    right: -22px;
+}
+
+.card-wrapper .card-list{
+	display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 2.6));
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: 0;
+}
+
+.card-list::-webkit-scrollbar {
+    display: none;
+}
+
+.card-list :where(.card-item, .card-img) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-list.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+}
+
+.card-list.no-transition {
+    scroll-behavior: auto;
+}
+
+.card-list.dragging .card-item {
+    cursor: grab;
+    user-select: none;
+}
+
+.card-list .card-item{
+	scroll-snap-align: start;
+    height: 600px;
+    list-style: none;
+    background: var(--clr-dark);
+    border-radius: 8px;
+    display: flex;
+    cursor: pointer;
+    width: 100%;
+    padding-bottom: 15px;
+	padding-left: 10px;
+	padding-right: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card-item .card-img{
+	width: 100%;
+	aspect-ratio: 16/9;
+	object-fit: cover;
+	border: 2px solid var(--clr-light);
+	border-radius: 10px;
+}
+
+.card-list .card-item .card-link{
+	user-select: none;
+	display: block;
+	background: var(--clr-bg);
+	padding: 18px;
+	border-radius: 12px;
+	text-decoration: none;
+	border: 2px solid transparent;
+	box-shadow: 0 0 10px var(--clr-accent);
+	transition: 0.2s ease;
+}
+
+.card-list .card-item .card-link:hover{
+	border-color: var(--clr-accent);
+}
+
+.card-list .card-link .tag{
+	display:inline-table;
+	color: var(--clr-light);
+	padding: 8px 14px;
+	font-size: 0.95rem;
+	font-weight: 500;
+	margin: 16px 0 18px;
+	background: var(--clr-projects);
+	width: fit-content;
+	border-radius: 50px;
+}
+
+.card-list .card-link .card-title{
+	color: var(--clr-accent);
+	font-weight: 600;
+}
+
+.card-list .card-link .card-button{
+	height: 35px;
+	width: 70px;
+	color: var(--clr-light);
+	border-radius: 5px;
+	margin: 30px 0 5px;
+	background: var(--clr-dark);
+	cursor: pointer;
+	border: 2px solid var(--clr-accent);
+	font-family: var(--ff-primary);
+	font-size: 1rem;
+	font-weight: 500;
+	transition: 0.4s ease;
+}
+
+.card-list .card-link:hover .card-button{
+	color: var(--clr-dark);
+	background: var(--clr-light);
+}
+
+@media screen and (max-width: 900px) {
+    .card-wrapper .card-list {
+        grid-auto-columns: calc((100% / 2) - 9px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .card-wrapper .card-list {
+        grid-auto-columns: 100%;
+    }
 }
