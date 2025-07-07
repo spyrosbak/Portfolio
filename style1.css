@@ -263,7 +263,16 @@ h3{
 }
 
 .about-me-img{
+	border: 5px solid var(--clr-light);
+	border-radius: 20%;
 	box-shadow: var(--box-shadow);
+	transition: ease 0.5s;	
+}
+
+.about-me-img:hover{
+	box-shadow: 12px 12px var(--clr-accent);
+	transform: translateY(-1em);
+	transition: ease 0.5s;	
 }
 
 @media (min-width: 1000px) {
@@ -304,6 +313,11 @@ h3{
 	}
 }
 
+.about-me-body p{
+	margin: 16px;
+	padding-bottom: 0%;
+}
+
 .experience{
 	padding-left: 30%;
 	padding-right: 30%;
@@ -318,7 +332,7 @@ h3{
 	align-items: center;
 	justify-content: center;
 	min-height: 100vh;
-	padding: 0 35px;
+	padding: 15px 35px;
 }
 
 .my-projects .section-title::after{
@@ -649,21 +663,22 @@ h3{
     top: 50%;
     font-size: 1.25 rem;
     transform: translateY(-50%);
-    box-shadow: 0 3px 6px var(--clr-accent);
 }
 
 .card-wrapper i:first-child {
     left: -22px;
+	box-shadow: -0.375em 0 0.4em var(--clr-accent);
 }
 
 .card-wrapper i:last-child {
     right: -22px;
+	box-shadow: 6px 0 6px var(--clr-accent);
 }
 
 .card-wrapper .card-list{
 	display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: calc((100% / 2.6));
+    grid-auto-columns: calc((100% / 2) - 6px);
     gap: 16px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
