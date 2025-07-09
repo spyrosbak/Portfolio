@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Echoes In The Mist</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <link href='https://fonts.googleapis.com/css?family=Zilla Slab' rel='stylesheet'>
+    <link rel="stylesheet" href="/css/master.css">
+</head>
+
+<body>
+    <!--Header-->
+    <div class="nav">
+        <a href="index.html">Home</a>
+    </div>
+    <!--End header-->
+
+    <section class="project-title" id="project">
+        <center>
+            <h1 class="section-project section-title-project">Echoes In The Mist</h1>
+            <h3 class="project-subtitle"><i>~ An endless magical run ~</i></h3>
+        </center>
+    </section>
+
+    <section class="slideshow" id="project-slideshow">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1/3</div>
+                <img src="echoes in the mist assets/screenshot_1.png" style="width: 100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2/3</div>
+                <img src="echoes in the mist assets/screenshot_2.png" style="width: 100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3/3</div>
+                <img src="echoes in the mist assets/screenshot_3.png" style="width: 100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <div style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+
+    <section class="summary" id="project-summary">
+        <p class="section-title-about-project" style="font-size: 2.7rem;"> About Echoes in the Mist </p>
+        <div class="summary-body">
+            <p>
+                Echoes In The Mist is a side scrolling endless runner game for web browsers. It is set in a magical forest guarded by giant red beetles. 
+                The player controls a red hooded whose purpose is to avoid the beetles and get out of this endless forest. The player must keep running 
+                and increase the score.  
+            </p>
+
+            <p>
+                The game includes very few and easy controls. The red hooded creature continuously runs to the right with increasing speed and the 
+                player needs to press Space to jump over the beetles to avoid them. The game can be paused by pressing the 'P' key on the keyboard. 
+                If the game is over, the player can start again and beat the previous highscore.
+            </p>
+
+            <p> 
+                Echoes in the Mist is a WebGL based video game and it can be played from any desktop browser 
+                <a class="social-link" href="https://sp-ike.itch.io/echoes-in-the-mist" target="_blank">here</a>
+            </p>
+        </div>
+
+        <p class="section-title-about-project"> My Contributions </p>
+        <div class="summary-body">
+            <p>
+                Echoes in the Mist is small web game entirely made by me. Some of the features it covers are:
+            </p>
+
+            <p>
+                <li class="contribution-item" style="color: #fff; font-size: larger;"><span style="color: #00fff7; font-size:large;"> Pixel art </span></li>
+                <li class="contribution-item" style="color: #fff; font-size: larger;"><span style="color: #00fff7; font-size:large;"> Post-processing </span></li>
+                <li class="contribution-item" style="color: #fff; font-size: larger;"><span style="color: #00fff7; font-size:large;"> Free assets </span></li>
+            </p>
+        </div>
+    </section>
+
+    <section class="acknowledgments" id="project-acknowledgments">
+        <p class="section-title-about-project"> Tools </p>
+        <div class="acknowledgments-body">
+            <p>Echoes in the Mist was made with <span style="color: #00fff7";> Unity 2023. </span></p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <a href="#" id="contact" class="mail-link">Contact me</a>
+        <ul class="social">
+            <li class="social-item"><a class="social-link" href="mailto:sbakalakos@gmail.com"><img src="gmail.png" alt="" class="icon"></a></li>
+            <li class="social-item"><a class="social-link" href="https://www.linkedin.com/in/spyros-bakalakos-752375220/"><img src="linkedin.png" alt="" class="icon"></a></li>
+            <li class="social-item"><a class="social-link" href="https://github.com/spyrosbak"><img src="github.png" alt="" class="icon"></a></li>
+            <li class="social-item"><a class="social-link" href="https://spike-pneuma.itch.io/"><img src="itch-io.png" alt="" class="icon"></a></li>
+            <li class="social-item"><a class="social-link" href="https://sketchfab.com/-sPiKe-"><img src="sketchfab-logo.png" alt="" class="icon"></a></li>
+            <li class="social-item"><a class="social-link" href="https://www.artstation.com/spike-pneuma"><img src="artstation.png" alt="" class="icon"></a></li>
+            <li class="social-item"><a class="social-link" href="https://www.instagram.com/spyros.bak/"><img src="instagram.png" alt="" class="icon"></a></li>
+        </ul>
+    </footer>
+
+    <button onclick="topFunction()" id="up" title="go to top"><img src="arrow.png" alt="" class="icon"></button>
+    <script src="script.js"></script>
+</body>
+
+</html>
